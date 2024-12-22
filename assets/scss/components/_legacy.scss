@@ -1,0 +1,50 @@
+.legacy {
+  background-color: #322c59;
+  padding: 3rem 0;
+  position: relative;
+  .legacy__content {
+    .title-container {
+      .title {
+        color: $white;
+      }
+    }
+    .legacy__text {
+      font-size: 15px;
+      line-height: 1.75;
+      color: $white;
+      margin-bottom: 0;
+      text-align: start;
+    }
+    .custom-button {
+      .button-link {
+        background-color: $secondary;
+        &::before {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+  .legacy__image {
+    background-color: #b5b0d9;
+    padding: 4rem;
+    position: absolute;
+    bottom: -40px;
+    top: 0;
+    z-index: 1;
+    &::before {
+      border-right: 24px solid #b5b0d9;
+      border-bottom: 40px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      left: -24px;
+      position: absolute;
+      z-index: -1;
+      bottom: 0px;
+    }
+    img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}

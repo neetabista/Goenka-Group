@@ -11,8 +11,8 @@
   font-family: "Open Sans", sans-serif;
 }
 
-section {
-  padding: 3rem 0;
+.section {
+  padding: 6rem 0;
 }
 a:hover {
   text-decoration: none !important;
@@ -24,8 +24,63 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0;
-  font-size: inherit;
-  font-weight: inherit;
   font-family: inherit;
+  color: inherit;
+  margin: 0;
+}
+.title-container {
+  margin-bottom: 2rem;
+  .subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $secondary;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 500;
+    color: $primary;
+    text-transform: capitalize;
+  }
+}
+.custom-button {
+  margin-top: 2rem;
+
+  .button-link {
+    display: block;
+    background-color: $primary;
+    color: $white;
+    max-width: 140px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:hover {
+      &::before {
+        top: -40%;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      transition-duration: 600ms;
+      width: 200%;
+      height: 200%;
+      top: 110%;
+      left: 50%;
+      background: $secondary;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
 }

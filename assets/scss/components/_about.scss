@@ -1,0 +1,52 @@
+.about {
+  background-image: cover;
+  background-position: 130% 90%;
+  background-repeat: no-repeat;
+  .about__wrap {
+    padding-top: 9rem;
+
+    .about__image {
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+    .about__content--wrap {
+      position: relative;
+      .about__content {
+        max-width: 70%;
+        .about__text {
+          font-size: 15px;
+          color: $textColor;
+          line-height: 1.75;
+        }
+      }
+      .experience {
+        position: absolute;
+        top: -100px;
+        right: 0;
+        max-width: 150px;
+        img {
+          width: 100%;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 5px 5px 0 0;
+        }
+        .experience__title {
+          width: 100%;
+          padding: 0.8rem;
+          background-color: $secondary;
+          font-size: 18px;
+          font-weight: 500;
+          color: $white;
+          border-radius: 0 0 5px 5px;
+          text-transform: capitalize;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

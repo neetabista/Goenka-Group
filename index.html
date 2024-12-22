@@ -16,10 +16,11 @@
     </title>
 
     <!-- bootstarp -->
+
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
 
@@ -41,10 +42,19 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
 
@@ -52,14 +62,14 @@
     <!-- header section  -->
     <div class="container">
       <header class="header">
-        <div class="logo">
+        <a href="#" class="logo">
           <img
             src="/assets/images/Goenka Logo.jpg"
             alt="Logo"
             width="100%"
             height="100%"
           />
-        </div>
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -67,49 +77,210 @@
             </li>
             <li class="nav__item">
               <a href="#"> about </a>
+
+              <!-- submenu  -->
+              <div class="submenu">
+                <div class="submenu__content">
+                  <div class="row g-5">
+                    <div class="col-lg-4">
+                      <div class="cards">
+                        <a href="#" class="cards__image">
+                          <img
+                            src="/assets/images/story.webp"
+                            alt="image"
+                            width="100%"
+                            height="100%"
+                          />
+                        </a>
+                        <div class="cards__content">
+                          <a href="#" class="cards__title">Our Story</a>
+                          <p>
+                            Incoporated in the year 1963. Goenka Group is one of
+                            the leading group in Nepal with a diversified
+                            business portfolio in both Manufacturing & Trading
+                            business. Since its inception.
+                          </p>
+                          <a href="#" class="cards__btn">
+                            learn more
+                            <span class="material-symbols-outlined">
+                              keyboard_double_arrow_right
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="cards">
+                        <a href="#" class="cards__image">
+                          <img
+                            src="/assets/images/story.webp"
+                            alt="image"
+                            width="100%"
+                            height="100%"
+                          />
+                        </a>
+                        <div class="cards__content">
+                          <a href="#" class="cards__title"> History </a>
+                          <p>
+                            Incoporated in the year 1963. Goenka Group is one of
+                            the leading group in Nepal with a diversified
+                            business portfolio in both Manufacturing & Trading
+                            business. Since its inception.
+                          </p>
+                          <a href="#" class="cards__btn">
+                            learn more
+                            <span class="material-symbols-outlined">
+                              keyboard_double_arrow_right
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="cards">
+                        <a href="#" class="cards__image">
+                          <img
+                            src="/assets/images/story.webp"
+                            alt="image"
+                            width="100%"
+                            height="100%"
+                          />
+                        </a>
+                        <div class="cards__content">
+                          <a href="#" class="cards__title"> Leadership </a>
+                          <p>
+                            Incoporated in the year 1963. Goenka Group is one of
+                            the leading group in Nepal with a diversified
+                            business portfolio in both Manufacturing & Trading
+                            business. Since its inception.
+                          </p>
+                          <a href="#" class="cards__btn">
+                            learn more
+                            <span class="material-symbols-outlined">
+                              keyboard_double_arrow_right
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end submenu  -->
             </li>
             <li class="nav__item">
               <a href="#"> business </a>
 
+              <!-- submenu  -->
               <div class="submenu">
                 <div class="submenu__content">
-                  <a href="#" class="brands">
-                    <div class="brand__image">
-                      <img
-                        src="/assets/images/brand-1.webp"
-                        alt="image"
-                        width="100%"
-                        height="100%"
-                      />
+                  <div class="row g-5">
+                    <div class="col-lg-3">
+                      <ul class="nav-tabs">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            data-bs-toggle="tab"
+                            href="#tab-steels"
+                            >Steels
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            href="#tab-cement"
+                            >Cement</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            href="#tab-pipes"
+                            >Pipes</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            href="#tab-electronics"
+                            >Electronics</a
+                          >
+                        </li>
+                      </ul>
                     </div>
-                    <h3 class="brand__title">Surya</h3>
-                  </a>
+                    <div class="col-lg-9">
+                      <div class="brands">
+                        <h5>brands</h5>
+                        <div id="tab-steels" class="tab-pane fade show active">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <a href="#" class="brands__card">
+                                <div class="brand__image">
+                                  <img
+                                    src="/assets/images/brand-1.jpg"
+                                    alt="image"
+                                    width="100%"
+                                    height="100%"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-3">
+                              <a href="#" class="brands__card">
+                                <div class="brand__image">
+                                  <img
+                                    src="/assets/images/brand-2.webp"
+                                    alt="image"
+                                    width="100%"
+                                    height="100%"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-3">
+                              <a href="#" class="brands__card">
+                                <div class="brand__image">
+                                  <img
+                                    src="/assets/images/brand-3.jpg"
+                                    alt="image"
+                                    width="100%"
+                                    height="100%"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-lg-3">
+                              <a href="#" class="brands__card">
+                                <div class="brand__image">
+                                  <img
+                                    src="/assets/images/brand-2.webp"
+                                    alt="image"
+                                    width="100%"
+                                    height="100%"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
 
-                  <a href="#" class="brands">
-                    <div class="brand__image">
-                      <img
-                        src="/assets/images/brand-2.webp"
-                        alt="image"
-                        width="100%"
-                        height="100%"
-                      />
+                        <a href="#" class="brand__btn">
+                          <div class="brand__btn--inner">
+                            see all brands
+                            <span class="material-symbols-outlined">
+                              keyboard_double_arrow_right
+                            </span>
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                    <h3 class="brand__title">Samriddhi Refined Oil</h3>
-                  </a>
-
-                  <a href="#" class="brands">
-                    <div class="brand__image">
-                      <img
-                        src="/assets/images/brand-3.jpg"
-                        alt="image"
-                        width="100%"
-                        height="100%"
-                      />
-                    </div>
-                    <h3 class="brand__title">Panghat Rice</h3>
-                  </a>
+                  </div>
                 </div>
               </div>
+              <!-- end submenu  -->
             </li>
             <li class="nav__item">
               <a href="#"> product </a>
@@ -133,6 +304,7 @@
     <!-- end header section  -->
 
     <main>
+      <!-- banner  -->
       <div class="banner">
         <div class="banner__image">
           <img
@@ -143,7 +315,649 @@
           />
         </div>
       </div>
+      <!-- end banner  -->
+
+      <!-- about us -->
+      <div
+        class="about"
+        style="background-image: url(/assets/images/bg-about.png)"
+      >
+        <div class="container">
+          <div class="about__wrap section">
+            <div class="row g-5">
+              <div class="col-lg-5">
+                <div class="about__image">
+                  <img
+                    src="/assets/images/about.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="about__content--wrap">
+                  <div class="about__content">
+                    <div class="title-container">
+                      <div class="subtitle">about</div>
+                      <h2 class="title">A market leader for over 10 years</h2>
+                    </div>
+                    <p class="about__text">
+                      Incoporated in the year 1963. Goenka Group is one of the
+                      leading groups in Nepal with diversified business
+                      portfolio in both Manufacturing and Trading business of
+                      various goods. Since its inception, the Group with the
+                      visionary intiations, state of art infrastucture and
+                      dedicated proffesional have been playing a promient role
+                      in reinforcing the national economy.
+                    </p>
+                    <div class="custom-button">
+                      <a href="#" class="button-link"> learn more </a>
+                    </div>
+                  </div>
+                  <div class="experience">
+                    <img
+                      src="/assets/images/banner-2.jpg"
+                      alt="image"
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="experience__title">10 Years experience</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about us  -->
+
+      <!-- legacy  -->
+      <div class="legacy">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-7">
+              <div class="legacy__content">
+                <div class="title-container">
+                  <div class="subtitle">legacy</div>
+                  <h2 class="title">From the Chairman's desk</h2>
+                </div>
+                <p class="legacy__text">
+                  It is with pleasure that I am welcoming you to the official
+                  web portal of GOENKA GROUP. Our organization values lies in
+                  the delight of our teams and appreciation from our clients. As
+                  one of most important driving forces in emerging modern
+                  civilization, corporations have become the backbone of the
+                  societies they belong to. To build a happy and melodious
+                  society, it is a worthwhile attempt for us to build a happy
+                  business. In the belief that everyone working for a company is
+                  part of society, I would like Goenka's employees to grow not
+                  only on the professional level but also on the social level.
+                  The company will no doubt continue to be sustained by
+                  enthusiastic and talented
+                </p>
+                <div class="custom-button">
+                  <a href="#" class="button-link"> read more </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="legacy__image">
+                <img
+                  src="/assets/images/Chairman-3.png"
+                  alt="image"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end legacy  -->
+
+      <!-- what we do  -->
+      <div class="what-we-do section">
+        <div class="container">
+          <div class="title-container">
+            <div class="subtitle">Create</div>
+            <h2 class="title">what we do</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/img-1.webp"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">Manufacturing</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/banner-2.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">
+                    Siddhivinayak Oils Pvt. Ltd.
+                  </h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/img-1.webp"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">Manufacturing</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/banner-2.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">
+                    Siddhivinayak Oils Pvt. Ltd.
+                  </h3>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/img-1.webp"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">Manufacturing</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/banner-2.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">
+                    Siddhivinayak Oils Pvt. Ltd.
+                  </h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/img-1.webp"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">Manufacturing</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="what-we-do__card">
+                <a href="#" class="what-we-do__image">
+                  <img
+                    src="/assets/images/banner-2.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                  <h3 class="what-we-do__title">
+                    Siddhivinayak Oils Pvt. Ltd.
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end what we do  -->
+
+      <!-- testimonials -->
+      <div class="testimonials section">
+        <div class="testimonials__bg">
+          <img
+            src="/assets/images/bg-shape.png"
+            alt="image"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="container">
+          <div class="testimonials__content">
+            <div class="title-container">
+              <div class="subtitle">Testimonials</div>
+              <h2 class="title">What our customers are saying</h2>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__image">
+                      <img
+                        src="/assets/images/testi-3.webp"
+                        alt="image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="testimonials__card--content">
+                      <p class="testimonials__text">
+                        The steel has seen a substantial profit. Goenka was a
+                        particularly valuable partner during the ideation phase,
+                        offering advice and sharing honest opinions about the
+                        product. The team's straight-forward communication style
+                        complements their excellent technical skills."
+                      </p>
+                      <div class="testimonials__title">
+                        <h4 class="name">Neeta Bista</h4>
+                        <p class="designation">software developer</p>
+                      </div>
+                    </div>
+                    <div class="testimonials__quot">
+                      <img
+                        src="/assets/images/quot.png"
+                        alt="image"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__image">
+                      <img
+                        src="/assets/images/testi-2.jpg"
+                        alt="image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="testimonials__card--content">
+                      <p class="testimonials__text">
+                        The steel has seen a substantial profit. Goenka was a
+                        particularly valuable partner during the ideation phase,
+                        offering advice and sharing honest opinions about the
+                        product. The team's straight-forward communication style
+                        complements their excellent technical skills."
+                      </p>
+                      <div class="testimonials__title">
+                        <h4 class="name">Ravi Krishna</h4>
+                        <p class="designation">software developer</p>
+                      </div>
+                    </div>
+                    <div class="testimonials__quot">
+                      <img
+                        src="/assets/images/quot.png"
+                        alt="image"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__image">
+                      <img
+                        src="/assets/images/testi-1.jpg"
+                        alt="image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="testimonials__card--content">
+                      <p class="testimonials__text">
+                        The steel has seen a substantial profit. Goenka was a
+                        particularly valuable partner during the ideation phase,
+                        offering advice and sharing honest opinions about the
+                        product. The team's straight-forward communication style
+                        complements their excellent technical skills."
+                      </p>
+                      <div class="testimonials__title">
+                        <h4 class="name">Sangam Sharma</h4>
+                        <p class="designation">software developer</p>
+                      </div>
+                    </div>
+                    <div class="testimonials__quot">
+                      <img
+                        src="/assets/images/quot.png"
+                        alt="image"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end testimonials  -->
+
+      <!-- blogs  -->
+      <div class="container">
+        <div class="blog section">
+          <div class="title-container">
+            <div class="subtitle">blogs</div>
+            <h2 class="title">Building better businesses together</h2>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <a href="#" class="blog__card">
+                <div class="blog__image">
+                  <img
+                    src="/assets/images/blog-img-1.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="blog__content">
+                  <div class="blog__info">
+                    <span><i class="bx bx-user"></i> By admin</span>
+                    <span> <i class="bx bx-calendar"></i>20 Dec, 2024 </span>
+                  </div>
+                  <h3 class="blog__title">
+                    Innovative solutions for a better future
+                  </h3>
+                  <div class="blog__button">
+                    read more
+                    <i class="bx bx-chevrons-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="#" class="blog__card">
+                <div class="blog__image">
+                  <img
+                    src="/assets/images/blog-im-2.webp"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="blog__content">
+                  <div class="blog__info">
+                    <span><i class="bx bx-user"></i> By admin</span>
+                    <span> <i class="bx bx-calendar"></i>20 Dec, 2024 </span>
+                  </div>
+                  <h3 class="blog__title">
+                    Innovative solutions for a better future
+                  </h3>
+                  <div class="blog__button">
+                    read more
+                    <i class="bx bx-chevrons-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="#" class="blog__card">
+                <div class="blog__image">
+                  <img
+                    src="/assets/images/blog-img-3.jpg"
+                    alt="image"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="blog__content">
+                  <div class="blog__info">
+                    <span><i class="bx bx-user"></i> By admin</span>
+                    <span> <i class="bx bx-calendar"></i>20 Dec, 2024 </span>
+                  </div>
+                  <h3 class="blog__title">
+                    Innovative solutions for a better future
+                  </h3>
+                  <div class="blog__button">
+                    read more
+                    <i class="bx bx-chevrons-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end blogs  -->
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div
+            class="footer__top--bg"
+            style="
+              background-image: url(/assets/images/footer-top-bg-shape.png);
+            "
+          >
+            <div class="row g-5">
+              <div class="col-lg-6">
+                <div class="footer__top--content">
+                  <h3>Get notified about the event! Subscribe today</h3>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer__top--button">
+                  <input type="email" placeholder="Email Address" />
+                  <button type="submit" class="subscribe-btn">
+                    <i class="bx bxs-envelope"></i> Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__container">
+        <div class="footer__inner">
+          <div class="footer__bg--image">
+            <img
+              src="/assets/images/footer-shap.png"
+              alt="image"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="container">
+            <div class="row g-5">
+              <div class="col-lg-3">
+                <div class="footer__block">
+                  <div class="footer__logo">
+                    <img
+                      src="/assets/images/Goenka Logo.jpg"
+                      alt="logo"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <p class="footer__text">
+                    Goenka Group is one of the leading groups in Nepal with
+                    diversified business involved in both manufacturing and
+                    trading of various goods.
+                  </p>
+                  <div class="footer__socials">
+                    <a
+                      href="#"
+                      to="https://www.facebook.com/goenkaelectronics"
+                      target="_blank"
+                      class="icon"
+                    >
+                      <div class="d-none">Goenka group Facebook Account</div>
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      to="https://www.facebook.com/goenkaelectronics"
+                      target="_blank"
+                      class="icon"
+                    >
+                      <div class="d-none">Goenka group instagram Account</div>
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a
+                      href="#"
+                      to="https://www.facebook.com/goenkaelectronics"
+                      class="icon"
+                    >
+                      <div class="d-none">Goenka group twitter Account</div>
+
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__block">
+                  <h3 class="footer__title">Quick links</h3>
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="#">Our Story</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#">CSR</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="#">blog & news</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#">Investments</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#">Career</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="#"> our policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__block">
+                  <h3 class="footer__title">Business</h3>
+
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="#">Manufacturing Unit</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#">Import & Trading Unit</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="#">Financial Unit</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__block">
+                  <h3 class="footer__title">Contact us</h3>
+
+                  <ul class="footer__info footer__list">
+                    <li class="footer__info--item footer__item">
+                      <i class="bx bxs-phone"></i>
+                      <a href="#">014514812 /4514814</a>
+                    </li>
+                    <li class="footer__info--item footer__item">
+                      <i class="bx bxs-envelope"></i>
+                      <a href="#">info@goenkagroup.com.np</a>
+                    </li>
+                    <li class="footer__info--item footer__item">
+                      <i class="bx bxs-map"></i>
+                      <span class="address">
+                        House No 619/21,Ward No 1, Thirbum Sadak,Naxal
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="bottom-list">
+              <div class="footer__copyright">
+                Copyright &copy; 2024 <span>Goenka Group</span>
+              </div>
+              <div class="footer__credit">
+                Powered By:
+                <a href="#" to="https://infinityinfosys.com/" target="_blank">
+                  Infinity Infosys
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -166,8 +980,8 @@
     ></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
