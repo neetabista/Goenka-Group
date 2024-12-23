@@ -84,3 +84,62 @@ h6 {
     }
   }
 }
+
+.custom-breadcrumbs {
+  .custom-breadcrumbs__bg {
+    min-height: 200px;
+    width: 100%;
+
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+
+    .custom-breadcrumbs__content {
+      .custom-breadcrumbs__title {
+        h1 {
+          color: $white;
+          text-transform: capitalize;
+          font-size: 32px;
+          font-weight: 700;
+          padding-bottom: 1rem;
+          color: $primary;
+        }
+      }
+
+      ul {
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        li {
+          font-size: 15px;
+          padding-right: 1rem;
+          font-weight: 500;
+        }
+
+        a {
+          display: inline-block;
+          position: relative;
+          padding-right: 10px;
+          margin-right: 10px;
+          color: $primary;
+          z-index: 5;
+          &::after {
+            content: ">";
+            position: absolute;
+            top: 0;
+            right: -13px;
+          }
+        }
+        .cb-current {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
